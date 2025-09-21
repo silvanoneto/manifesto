@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+
+<!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Instruções para GitHub Pages | Vida, Poder e Desigualdade Social</title>
+<meta name="generator" content="Jekyll v3.9.5" />
+<meta property="og:title" content="Instruções para GitHub Pages" />
+<meta name="author" content="Projeto Coletivo" />
+<meta property="og:locale" content="pt_BR" />
+<meta name="description" content="Uma Anatomia Filosófica da Opressão Brasileira" />
+<meta property="og:description" content="Uma Anatomia Filosófica da Opressão Brasileira" />
+<link rel="canonical" href="http://localhost:4000/GITHUB_PAGES.html" />
+<meta property="og:url" content="http://localhost:4000/GITHUB_PAGES.html" />
+<meta property="og:site_name" content="Vida, Poder e Desigualdade Social" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Instruções para GitHub Pages" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","author":{"@type":"Person","name":"Projeto Coletivo"},"description":"Uma Anatomia Filosófica da Opressão Brasileira","headline":"Instruções para GitHub Pages","url":"http://localhost:4000/GITHUB_PAGES.html"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preload" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" as="style" type="text/css" crossorigin>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#157878">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="stylesheet" href="/assets/css/style.css?v=7c8c9cc650030e1376cb9a58fe01734dd2f75bfc">
+    <!-- start custom head snippets, customize with your own _includes/head-custom.html file -->
+
+<!-- Setup Google Analytics -->
+
+
+
+<!-- You can set your favicon here -->
+<!-- link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" -->
+
+<!-- end custom head snippets -->
+
+  </head>
+  <body>
+    <a id="skip-to-content" href="#content">Skip to the content.</a>
+
+    <header class="page-header" role="banner">
+      <h1 class="project-name">Instruções para GitHub Pages</h1>
+      <h2 class="project-tagline">Uma Anatomia Filosófica da Opressão Brasileira</h2>
+      
+        <a href="https://github.com/silvanoneto/manifesto" class="btn">View on GitHub</a>
+      
+      
+    </header>
+
+    <main id="content" class="main-content" role="main">
+      <h1 id="instruções-para-github-pages">Instruções para GitHub Pages</h1>
+
+<h2 id="configuração-completa">Configuração Completa</h2>
+
+<p>O repositório já está configurado para GitHub Pages com:</p>
+
+<ul>
+  <li>✅ <strong>_config.yml</strong> - Configuração Jekyll com tema Cayman</li>
+  <li>✅ <strong>index.md</strong> - Página inicial estilizada</li>
+  <li>✅ <strong>artigo/index.md</strong> - Página do artigo acadêmico</li>
+  <li>✅ <strong>manifesto/index.md</strong> - Página do manual prático</li>
+  <li>✅ <strong>Gemfile</strong> - Dependências do Jekyll</li>
+</ul>
+
+<h2 id="como-ativar-github-pages">Como Ativar GitHub Pages</h2>
+
+<ol>
+  <li><strong>Faça commit dos arquivos</strong>:
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+</pre></td><td class="rouge-code"><pre>git add <span class="nb">.</span>
+git commit <span class="nt">-m</span> <span class="s2">"Configuração inicial GitHub Pages"</span>
+git push origin main
+</pre></td></tr></tbody></table></code></pre></div>    </div>
+  </li>
+  <li><strong>No GitHub, vá em Settings &gt; Pages</strong>:
+    <ul>
+      <li>Source: Deploy from a branch</li>
+      <li>Branch: main</li>
+      <li>Folder: / (root)</li>
+      <li>Clique em “Save”</li>
+    </ul>
+  </li>
+  <li><strong>Aguarde alguns minutos</strong> para o site ficar disponível em:
+<code class="language-plaintext highlighter-rouge">https://[seu-usuario].github.io/vida-poder-desigualdade-social/</code></li>
+</ol>
+
+<h2 id="estrutura-do-site">Estrutura do Site</h2>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+</pre></td><td class="rouge-code"><pre>📁 Site Principal (index.md)
+├── 📖 Artigo Acadêmico (artigo/)
+├── 🛠️ Manual Prático (manifesto/)  
+└── 🔬 Análise Teórica (avancos_teoricos_bestialismo.md)
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<h2 id="personalização">Personalização</h2>
+
+<ul>
+  <li><strong>Título</strong>: Edite <code class="language-plaintext highlighter-rouge">title</code> em <code class="language-plaintext highlighter-rouge">_config.yml</code></li>
+  <li><strong>Descrição</strong>: Edite <code class="language-plaintext highlighter-rouge">description</code> em <code class="language-plaintext highlighter-rouge">_config.yml</code></li>
+  <li><strong>Navegação</strong>: Modifique <code class="language-plaintext highlighter-rouge">header_pages</code> em <code class="language-plaintext highlighter-rouge">_config.yml</code></li>
+  <li><strong>Estilo</strong>: Adicione CSS customizado em <code class="language-plaintext highlighter-rouge">index.md</code> (já incluído)</li>
+</ul>
+
+<h2 id="teste-local-opcional">Teste Local (Opcional)</h2>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+</pre></td><td class="rouge-code"><pre>bundle <span class="nb">install
+</span>bundle <span class="nb">exec </span>jekyll serve
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>Acesse: <code class="language-plaintext highlighter-rouge">http://localhost:4000</code></p>
+
+<h2 id="urls-finais">URLs Finais</h2>
+
+<ul>
+  <li><strong>Site Principal</strong>: <code class="language-plaintext highlighter-rouge">[seu-site]/</code></li>
+  <li><strong>Artigo</strong>: <code class="language-plaintext highlighter-rouge">[seu-site]/artigo/</code></li>
+  <li><strong>Manual</strong>: <code class="language-plaintext highlighter-rouge">[seu-site]/manifesto/</code></li>
+  <li><strong>Análise Teórica</strong>: <code class="language-plaintext highlighter-rouge">[seu-site]/avancos_teoricos_bestialismo.html</code></li>
+</ul>
+
+
+      <footer class="site-footer">
+        
+          <span class="site-footer-owner"><a href="https://github.com/silvanoneto/manifesto">manifesto</a> is maintained by <a href="https://github.com/silvanoneto">silvanoneto</a>.</span>
+        
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.</span>
+      </footer>
+    </main>
+  </body>
+</html>

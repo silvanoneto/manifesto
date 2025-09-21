@@ -1,0 +1,112 @@
+# Configuração do GitHub Pages para o projeto "Vida, Poder e Desigualdade Social"
+title: "Vida, Poder e Desigualdade Social"
+description: "Uma Anatomia Filosófica da Opressão Brasileira"
+author: "O Besta."
+lang: pt-BR
+timezone: America/Sao_Paulo
+baseurl: "" # será preenchido automaticamente pelo GitHub Pages
+url: "" # será preenchido automaticamente pelo GitHub Pages
+
+# Tema do GitHub Pages
+remote_theme: pages-themes/cayman@v0.2.0
+
+# Configurações do Jekyll
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    css_class: 'highlight'
+    span:
+      line_numbers: false
+    block:
+      line_numbers: true
+  
+# Plugins
+plugins:
+  - jekyll-remote-theme
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# Navegação
+header_pages:
+  - artigo/index.md
+  - manifesto/index.md
+  - avancos_teoricos/index.md
+
+# Collections para organizar conteúdo
+collections:
+  artigo:
+    output: true
+    permalink: /artigo/:name/
+  manifesto:
+    output: true
+    permalink: /manifesto/:name/
+  avancos_teoricos:
+    output: true
+    permalink: /avancos_teoricos/:name/
+
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
+  - scope:
+      path: "artigo"
+      type: "pages"
+    values:
+      layout: "page"
+  - scope:
+      path: "manifesto"
+      type: "pages"
+    values:
+      layout: "page"
+  - scope:
+      path: "avancos_teoricos"
+      type: "pages"
+    values:
+      layout: "page"
+
+# SEO e metadados
+social:
+  name: "Projeto Vida, Poder e Desigualdade Social"
+  links:
+    - https://github.com/silvanoneto/manifesto
+
+# Configurações de build
+exclude:
+  - .DS_Store
+  - .git/
+  - .github/
+  - .memorybank/
+  - vendor/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - "*.gem"
+  - "*.gemspec"
+  - "*.chatreplay.json"
+  - task.md
+  - sessao_completa_desenvolvimento.md
+  - README.md # excluir README da raiz para não conflitar com index.md
+  
+# Configurações específicas do projeto
+project:
+  tagline: "A serviço de que vida você colocará a sua?"
+  version: "4.0"
+  status: "Projeto completo sistematizado"
+  keywords:
+    - "filosofia social"
+    - "marxismo-leninismo-maoísmo"
+    - "transformação social"
+    - "metodologia popular"
+    - "organização territorial"
+    - "desigualdade"
+    - "resistência"
+    - "marxismo"
+    - "Brasil"
+    - "poder popular"
